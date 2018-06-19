@@ -24,7 +24,7 @@
          <div style="z-index:0;" class="site">
             <header class="primary-skin navbar navbar-expand-xs justify-content-center mb-0">
                <div class="container">
-                  <a href="/welcome" id="ember449" class="navbar-brand custom-color d-none d-sm-block active ember-view">
+                  <a href="index.html" id="ember449" class="navbar-brand custom-color d-none d-sm-block active ember-view">
                      <h3 class="font-weight-light">
                         Public Access Submission System
                      </h3>
@@ -49,8 +49,6 @@
                                  <div id="navbarSupportedContent" class="collapse navbar-collapse">
                                     <ul style="width:100%" class="navbar-nav">
                                        <li class="nav-item"><a href="index.html" id="ember470" class="nav-link pl-0 ml-0 ember-view">Home</a></li>
-                                       <li class="nav-item"><a href="/grants" id="ember471" class="nav-link ember-view">Grants</a></li>
-                                       <li class="nav-item"><a href="/submissions" id="ember495" class="nav-link ember-view">Submissions</a></li>
                                        <li class="nav-item"><a href="about.html" id="ember507" class="nav-link ember-view">About</a></li>
                                        <li class="nav-item"><a href="contact.html" id="ember512" class="nav-link ember-view">Contact</a></li>
                                        <li class="nav-item"><a href="faq.html" id="ember517" class="nav-link ember-view">FAQ</a></li>
@@ -69,26 +67,55 @@
             </div>
             <div class="container site-content">
                <!---->
-               <div style="max-width: 700px;" class="ml-auto mr-auto">
-                  <header class="m-4 p-4">
-                     <h1 class="text-center">Frequently Asked Questions</h1>
-                  </header>
-                  <section>
-                     <h3>Question 1</h3>
-                     <p>Answer</p>
-                  </section>
-                  <section>
-                     <h3>Question 2</h3>
-                     <p>Answer</p>
-                  </section>
-                  <section>
-                     <h3>Question 3</h3>
-                     <p>Answer</p>
-                  </section>
-                  <section>
-                     <h3>Question 4</h3>
-                     <p>Answer</p>
-                  </section>
+               <div style="max-width: 1000px;" class="ml-auto mr-auto faq-content">
+                 <header class="mt-5">
+                   <h1>Frequently Asked Questions</h1>
+                 </header>
+                 <section>
+                   <h3 id="policies_PASS_can_support">What Open or Public Access policies can PASS support?</h3>
+                   <p>PASS fully supports Johns Hopkins University (JHU) Open Access policy by facilitating submissions of author’s accepted manuscripts (final published article - where permitted) into JScholarship, JHU institutional repository.</p>
+                   <p id="agencies_supported_by_PASS">Additionally, PASS supports existing workflows for Public Access mandated submissions into PubMed Central (PMC) - used by NIH and other funding agencies. Full list of agencies, whose Public Access policies PASS can support is below:</p>
+                   <h5>Full integration</h5>
+                   <p class="integration-type-text">Programmatic submission from PASS to NIH Manuscript Submission System (NIHMS) and status updates</p>
+                   <ul>
+                     <li>NIH - National Institutes of Health</li>
+                   </ul>
+                   <h5>Deposit integration</h5>
+                   <p class="integration-type-text">Programmatic submission from PASS to NIHMS without status updates</p>
+                   <ul>
+                     <li>ACL - Administration for Community Living</li>
+                     <li>AHRQ - Agency for Healthcare Research and Quality</li>
+                     <li>ASPR –  Office of the Assistant Secretary for Preparedness and Response</li>
+                     <li>CDC – Centers for Disease Control</li>
+                     <li>VA – Department of Veteran Affairs</li>
+                     <li>FDA - Food and Drug Administration</li>
+                     <li>HHMI- Howard Hughes Medical Institute</li>
+                     <li>NASA -National Aeronautics and Space Administration </li>
+                   </ul>
+                   <h5>Linked web portal</h5>
+                   <p class="integration-type-text">Programmatic integration is not currently possible, but PASS does provide link to the agencies’ submission portal and provide full list of relevant metadata to aid with submission process</p>
+                   <ul>
+                     <li>ED – Department of Education</li>
+                     <li>USAID – US Agency for International Development</li>
+                   </ul>
+                 </section>
+                 <section>
+                   <h3 id="institution-policy">What is my institution's open access policy?</h3>
+                   <p>As of July 1, 2018, Johns Hopkins University have put in effect a university wide open access policy that requires all scholarly articles produced by full-time faculty members be made openly available. To learn more about this policy visit the <a href="https://provost.jhu.edu/about/open-access/" target="_blank">Office of the Provost's webpages on Open Access at Johns Hopkins</a>.</p>
+                 </section>
+                 <section>
+                   <h3 id="processing">What is an article processing charge?</h3>
+                   <p>Article process charge, also known as publication fee, is a fee often charged to authors, by publisher, to fund the publication of open access journal articles. This fee is typically paid for by the author’s institution or research funder and range from $100 to $5000.</p>
+                 </section>
+                 <section>
+                   <h3 id="nih-submissions">What information about NIH submissions is pre-loaded into PASS?</h3>
+                   <p>Records of prior NIH submissions displayed in PASS go back to January 2013. Each night, updated Submission information is loaded into PASS from the NIH Manuscript Submission system (NIHMS). This information contains the public access compliance status of articles associated with NIH grants. If you are a PI on an NIH grant and have articles that are associated with those grants in PubMed, you may see the following on <a href="/submissions" id="ember432" class="ember-view">your Submissions page</a>:</p>
+                      <ul>
+                        <li>Information about completed or in-progress Submissions, some of which may have been initiated outside of PASS. No action is required for these Submissions.</li>
+                        <li>Information about manuscripts that have not yet been received by NIH for deposit into PubMed Central. These will appear in PASS as "requiring a manuscript" and can be completed through PASS to deposit the manuscript into compliance.</li>
+                      </ul>
+                   <p>The information for these submissions comes directly from NIH. Please feel free to <a href="/contact" id="ember433" class="ember-view">contact us</a> if there are problems with the information so that we can contact NIH.</p>
+                 </section>
                </div>
             </div>
             <footer class="app-footer justify-content-center mt-3">
