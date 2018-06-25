@@ -5,19 +5,15 @@
       <title>PassEmber</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link integrity="" rel="stylesheet" href="assets/vendor.css">
       <link integrity="" rel="stylesheet" href="assets/pass-ember.css">
       <link rel="icon" href="favicon.png">
       <link rel="stylesheet" href="assets/coreUI.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
    </head>
    <body data-gr-c-s-loaded="true" class="ember-application">
-      <script src="assets/vendor.js"></script>
-      <!-- <script type="text/javascript" src="/js/fuzzyset.js"></script> -->
-      <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
-      <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
-      <script type="text/javascript" src="//code.cloudcms.com/alpaca/1.5.24/bootstrap/alpaca.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+      <script src="assets/logged-in.js"></script>
+	  
       <div id="ember-basic-dropdown-wormhole"></div>
       <div id="modal-overlays"></div>
       <div id="ember421" class="ember-view">
@@ -29,7 +25,7 @@
                         Public Access Submission System
                      </h3>
                   </a>
-                  <a href="/welcome" id="ember456" class="navbar-brand custom-color d-xs-block d-sm-none active ember-view">
+                  <a href="index.html" id="ember456" class="navbar-brand custom-color d-xs-block d-sm-none active ember-view">
                      <h3 class="font-weight-light">P.A.S.S.</h3>
                   </a>
                   <img src="img/fullSizeLogo.png" alt="Logo" class="nav-item d-sm-down-none pull-right jhu-logo pr-0">
@@ -52,8 +48,8 @@
                                        <li class="nav-item"><a href="about.html" id="ember507" class="nav-link ember-view">About</a></li>
                                        <li class="nav-item"><a href="contact.html" id="ember512" class="nav-link ember-view">Contact</a></li>
                                        <li class="nav-item"><a href="faq.html" id="ember517" class="nav-link ember-view">FAQ</a></li>
-                                       <li class="nav-item dropdown ml-auto">
-                                        <a href="/login" id="ember510" class="dropdown-item btn btn-primary active ember-view"><i class="fa fa-lock"></i>Login</a>
+                                       <li class="nav-item dropdown ml-auto" id="login-button">
+                                        <a href="/app/" id="ember510" class="dropdown-item btn btn-primary active ember-view"><i class="fa fa-lock"></i>Login</a>
                                       </li>
                                     </ul>
                                  </div>
@@ -66,19 +62,36 @@
                </div>
             </div>
             <div class="container site-content">
-               <!---->
+               <style>
+				.faq-content h3 {
+				  padding-top:10px;
+				  font-weight:bold;
+				  font-size: 1.2rem!important;
+				}
+				.integration-type-text {
+				  font-style: italic;
+				  margin-bottom:3px;
+				  padding-bottom:0;
+				}
+				.faq-anchor {
+				  display: block;
+				  position: relative;
+				  top: -50px;
+				  visibility: hidden;
+				}
+				</style>
                <div style="max-width: 1000px;" class="ml-auto mr-auto faq-content">
                  <header class="mt-5">
                    <h1>Frequently Asked Questions</h1>
                  </header>
-                 <p>The following questions are answered on this page. If you have other questions, feel free to <a href="/contact" id="ember661" class="ember-view">contact us</a></p>
+                 <p>The following questions are answered on this page. If you have other questions, feel free to <a href="contact.html" id="ember661" class="ember-view">contact us</a></p>
                  <ul>
-                   <li><a href="faq#supported-policies">What Open or Public Access policies can PASS support?</a></li>
-                   <li><a href="faq#institution-policy">What is JHU's open access policy?</a></li>
-                   <li><a href="faq#what-to-expect">What should I expect after submitting through PASS?</a></li>
-                   <li><a href="faq#publisher-submit">Will the publisher automatically submit my article to PubMed Central?</a></li>
-                   <li><a href="faq#nih-submissions">What information about NIH submissions is pre-loaded into PASS?</a></li>
-                   <li><a href="faq#negotiate-copyright">How do I negotiate a copyright agreement for my publication to comply with Public/Open Access Policies?</a></li>
+                   <li><a href="#supported-policies">What Open or Public Access policies can PASS support?</a></li>
+                   <li><a href="#institution-policy">What is JHU's open access policy?</a></li>
+                   <li><a href="#what-to-expect">What should I expect after submitting through PASS?</a></li>
+                   <li><a href="#publisher-submit">Will the publisher automatically submit my article to PubMed Central?</a></li>
+                   <li><a href="#nih-submissions">What information about NIH submissions is pre-loaded into PASS?</a></li>
+                   <li><a href="#negotiate-copyright">How do I negotiate a copyright agreement for my publication to comply with Public/Open Access Policies?</a></li>
                  </ul>
                  <section>
                    <a id="supported-policies" class="faq-anchor"></a>
@@ -145,17 +158,17 @@
                  <section>
                    <a id="nih-submissions" class="faq-anchor"></a>
                    <h3>What information about NIH submissions is pre-loaded into PASS?</h3>
-                   <p>Records of prior NIH submissions displayed in PASS go back to January 2013. Each night, updated Submission information is loaded into PASS from the NIH Manuscript Submission system (NIHMS). This information contains the public access compliance status of articles associated with NIH grants. If you are a PI on an NIH grant and have articles that are associated with those grants in PubMed, you may see the following on <a href="/submissions" id="ember662" class="ember-view">your Submissions page</a>:</p>
+                   <p>Records of prior NIH submissions displayed in PASS go back to January 2013. Each night, updated Submission information is loaded into PASS from the NIH Manuscript Submission system (NIHMS). This information contains the public access compliance status of articles associated with NIH grants. If you are a PI on an NIH grant and have articles that are associated with those grants in PubMed, you may see the following on <a href="/app/submissions" id="ember662" class="ember-view">your Submissions page</a>:</p>
                       <ul>
                         <li>Information about completed or in-progress Submissions, some of which may have been initiated outside of PASS. No action is required for these Submissions.</li>
                         <li>Information about manuscripts that have not yet been received by NIH for deposit into PubMed Central. These will appear in PASS as "requiring a manuscript" and can be completed through PASS to deposit the manuscript into compliance.</li>
                       </ul>
-                   <p>The information for these submissions comes directly from NIH. Please feel free to <a href="/contact" id="ember663" class="ember-view">contact us</a> if there are problems with the information so that we can contact NIH.</p>
+                   <p>The information for these submissions comes directly from NIH. Please feel free to <a href="contact.html" id="ember663" class="ember-view">contact us</a> if there are problems with the information so that we can contact NIH.</p>
                  </section>
                  <section>
                    <a id="negotiate-copyright" class="faq-anchor"></a>
                    <h3>How do I negotiate a copyright agreement for my publication to comply with Public/Open Access Policies?</h3>
-                   <p>Many journals make allowances for self-archiving and compliance with access policies implemented by a funder or institution. You can look up many publishers’ policies for copyright and self-archiving on the <a href="http://www.sherpa.ac.uk/romeo/index.php" target="_blank">SHERPA/RoMEO website</a>. If a journal does not allow open sharing of your article, you may be able to negotiate with them to make an exception. For help with copyright negotiation, or any other copyright related questions, please <a href="/contact" id="ember664" class="ember-view">contact Robin Sinn at the Office of Scholarly Communication</a>.</p>
+                   <p>Many journals make allowances for self-archiving and compliance with access policies implemented by a funder or institution. You can look up many publishers’ policies for copyright and self-archiving on the <a href="http://www.sherpa.ac.uk/romeo/index.php" target="_blank">SHERPA/RoMEO website</a>. If a journal does not allow open sharing of your article, you may be able to negotiate with them to make an exception. For help with copyright negotiation, or any other copyright related questions, please <a href="contact.html" id="ember664" class="ember-view">contact Robin Sinn at the Office of Scholarly Communication</a>.</p>
                  </section>
 
                </div>
