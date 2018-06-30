@@ -887,3 +887,25 @@ footer {
 
 .awardnum-funder-column {
   min-width: 150px; }
+ 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #not-supported-box {
+    visibility:visibile;
+    display:block;
+    height: 5rem;
+    text-align:center;
+    background-color: #f4babc;
+    font-size: 1.2rem;
+    padding-top:1.8rem;
+  }
+  footer {
+    visibility:hidden;
+  }
+}
+ 
+@supports (top:0) {
+  #not-supported-box {
+    visibility:hidden;
+    display:none;
+  }
+}
