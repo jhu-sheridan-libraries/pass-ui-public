@@ -64,25 +64,26 @@
             <div class="container site-content">
                <!---->
                <style>
-                  .fourohfour {
-                  font-size: 10em !important;
+                  .error-text {
+                  font-size: 2em !important;
                   margin-bottom: 0;
                   height: auto;
                   }
-                  .page-not-found {
-                  font-size: 3em !important;
-                  margin-top: -40px;
-                  }
                   .helpful-text {
-                  font-size: 1.5em !important;
+                  font-size: 1.3em !important;
+                  }
+                  .error-icon {
+                  width:120px;
+                  float:left;
+                  margin-top:50px;
+                  margin-right:20px;
                   }
                </style>
-               <div style="padding-top:50px;" class="row text-center">
+               <div class="row">
                   <div class="col">
-                     <h1 class="fourohfour">403</h1>
-                     <h1 class="page-not-found"><small class="muted">Forbidden</small></h1>
-                     <p class="helpful-text"><br>Looks like you do not have access to this page. :(</p>
-                     <p>If you think this might be a problem with the site itself, please <a href="contact.html" id="ember536" class="ember-view">let us know</a>.</p>
+                     <img src="img/error-icon.png" class="error-icon">
+                     <p class="error-text"><br>403: Access forbidden</p>
+                     <p class="helpful-text">Your account does not have permission to access the requested page. If you think there is a problem with the site, please <a href="contact.html" id="ember536" class="ember-view">let us know</a>.</p>
                   </div>
                </div>
             </div>
