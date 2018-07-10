@@ -10,11 +10,11 @@
           var loginbtn = document.getElementById('login-button');
           loginbtn.style.visibility = 'hidden';
         } else {
-          timestampLoginLink()
+          timestampLoginLink();
         }
       },
       error: function() {
-        timestampLoginLink()
+        timestampLoginLink();
       }
     });
   });
