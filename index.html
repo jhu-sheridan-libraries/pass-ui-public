@@ -6,10 +6,11 @@
   <title>PASS</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link integrity="" rel="stylesheet" href="assets/pass-ember.css">
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="assets/coreUI.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link integrity="" rel="stylesheet" href="assets/pass-ember.css">
+  <link rel="stylesheet" href="assets/branding.css">
 </head>
 
 <body data-gr-c-s-loaded="true" class="ember-application">
@@ -23,56 +24,43 @@
 
   <div id="ember-basic-dropdown-wormhole"></div>
   <div id="modal-overlays"></div>
-  <div id="ember335" class="ember-view">
+  <div class="ember-view">
     <div style="z-index:0;" class="site">
-      <header class="primary-skin navbar navbar-expand-xs justify-content-center mb-0">
+      <header id="brand-header" class="navbar navbar-expand-xs justify-content-center mb-0">
         <div class="container">
-          <a href="index.html" id="ember363" class="navbar-brand custom-color d-none d-sm-block active ember-view">
-            <h3 class="font-weight-light">
-                       Public Access Submission System
-                    </h3>
+          <a href="index.html" class="navbar-brand d-none d-sm-block">
+            <h3 id="brand-header-title" class="font-weight-light">
+              Public Access Submission System
+            </h3>
           </a>
-          <a href="index.html" id="ember370" class="navbar-brand custom-color d-xs-block d-sm-none active ember-view">
+          <a href="index.html" class="navbar-brand custom-color d-xs-block d-sm-none active ember-view">
             <h3 class="font-weight-light">P.A.S.S.</h3>
           </a>
-          <a href="https://jhu.edu"><img src="img/fullSizeLogo.png" alt="Logo" class="nav-item d-sm-down-none pull-right jhu-logo pr-0"></a>
+          <a href="https://jhu.edu">
+            <img id="brand-logo" src="img/fullSizeLogo.png" alt="Logo" class="nav-item d-sm-down-none pull-right brand-logo pr-0">
+          </a>
         </div>
       </header>
       <div style="z-index:10000;">
-        <div id="ember371" class="sticky-element-container ember-view">
-          <div id="ember378" class="sticky-element__trigger sticky-element__trigger--top ember-view"></div>
-          <div class="
-                    sticky-element
-                    ">
-            <div id="ember383" class="ember-view">
-              <nav style="background: white;" id="myHeader" class="navbar navbar-light navbar-expand-md w-100">
+        <div class="sticky-element-container ember-view">
+          <div class="sticky-element__trigger sticky-element__trigger--top ember-view"></div>
+          <div class="sticky-element">
+            <div class="ember-view">
+              <nav id="header-navbar" class="navbar navbar-light navbar-expand-md w-100">
                 <div class="container">
                   <div style="width:100%;" class="col-xs-12">
                     <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler text-center border-none">
-                                <span class="navbar-toggler-icon"></span>
-                                </button>
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div id="navbarSupportedContent" class="collapse navbar-collapse">
                       <ul style="width:100%" class="navbar-nav">
-                        <li class="nav-item"><a href="index.html" id="ember388" class="nav-link pl-0 ml-0 ember-view">Home</a></li>
-                        <li class="nav-item"><a href="about.html" id="ember433" class="nav-link ember-view">About</a></li>
-                        <li class="nav-item"><a href="contact.html" id="ember438" class="nav-link ember-view">Contact</a></li>
-                        <li class="nav-item"><a href="faq.html" id="ember443" class="nav-link ember-view">FAQ</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link pl-0 ml-0 ember-view">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link ember-view">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link ember-view">Contact</a></li>
+                        <li class="nav-item"><a href="faq.html" class="nav-link ember-view">FAQ</a></li>
                         <li class="nav-item dropdown ml-auto" id="login-button">
                           <a href="/app/" id="login-link" class="dropdown-item btn btn-primary active ember-view"><i class="fa fa-lock"></i>Login</a>
                         </li>
-                        <!--<li class="nav-item dropdown ml-auto">
-                          <a data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" class="nav-link accountInfo pr-1">
-                                         <span class="pr-1"><img width="30" height="30" title="nihuser@jhu.edu" alt="nihuser@jhu.edu" src="https://www.gravatar.com/avatar/979678d4529fb62a12251478bb1fab7b?s=60&amp;d=identicon" id="ember444" class="img-avatar gravatar-image ember-view">
-                                         </span>
-                                         </a> 
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <div class="dropdown-header text-center">
-                              <strong>Account</strong>
-                            </div>
-                            <div class="divider"></div>
-                            <a href="#" class="dropdown-item" data-ember-action="" data-ember-action-445="445"><i class="fa fa-lock"></i>Logout</a>
-                          </div>
-                        </li>-->
                       </ul>
                     </div>
                   </div>
@@ -80,31 +68,15 @@
               </nav>
             </div>
           </div>
-          <!---->
         </div>
       </div>
       <div class="container site-content">
-
         <!---->
         <style>
-          #headerCarousel {
-            width: 100%;
-          }
-
-          #headerCarousel .carouselInner {
-            width: 100%;
-          }
-
-          #headerCarousel .carousel-item {
-            width: 100%;
-            overflow: hidden;
-          }
-
-          #headerCarousel .carousel-item img {
-            height: 350px;
-            object-fit: cover;
-            min-width: auto;
-          }
+          #headerCarousel { width: 100%; }
+          #headerCarousel .carouselInner { width: 100%; }
+          #headerCarousel .carousel-item { width: 100%; overflow: hidden; }
+          #headerCarousel .carousel-item img { height: 350px; object-fit: cover; min-width: auto; }
         </style>
         <div>
           <div id="headerCarousel" data-ride="carousel" data-interval="5000" class="carousel slide">
@@ -171,18 +143,20 @@
             <div class="col-md-12 text-center">
               <h1 class="font-weight-light mt-4">Public Access Submission System</h1>
               <p class="font-weight-light mt-4">
-                Use PASS to submit your manuscripts to funder and institutional publication repositories (e.g. PubMed Central, JScholarship) and comply with access policies. Using the web-based PASS system, you can: avoid paying article processing charges to make your
-                publication open to the public, simultaneously send your manuscript to multiple repositories seamlessly, and populate forms automatically with publication and author information by providing DOIs and ORCID IDs. <a href="about.html"
-                  id="ember653" class="ember-view">Learn more about PASS?</a>
+                Use PASS to submit your manuscripts to funder and institutional publication repositories (e.g. PubMed Central, JScholarship)
+                and comply with access policies. Using the web-based PASS system, you can: avoid paying article processing charges to make your
+                publication open to the public, simultaneously send your manuscript to multiple repositories seamlessly, and populate forms
+                automatically with publication and author information by providing DOIs and ORCID IDs.
+                <a href="about.html" class="ember-view">Learn more about PASS?</a>
               </p>
               <a href="/app/" id="get-started-link" class="btn btn-primary mt-1 pl-4 pr-4 ember-view">Get started!</a>
             </div>
           </div>
         </div>
         <h2 class="font-weight-light mt-4 text-center m-4">
-               PASS supports existing submission workflows for the following agencies and institutions
-             </h2>
-        <div id="ember655" class="row mb-4 padding-lr-100 ember-view">
+          PASS supports existing submission workflows for the following agencies and institutions
+        </h2>
+        <div class="row mb-4 padding-lr-100 ember-view">
           <div class="col-md-6 col-lg-3">
             <div id="slideOne" data-interval="5000" data-ride="carousel" class="carousel slide auto">
               <ol class="carousel-indicators">
@@ -299,7 +273,7 @@
       <footer class="app-footer justify-content-center mt-3">
         <div class="text-center p-1">
           <small>Interested in making PASS even better? Want to have PASS for your institution?
-                 <a href="contact.html" id="ember449" class="ember-view">Contact us</a>!</small>
+          <a href="contact.html" class="ember-view">Contact us</a>!</small>
         </div>
       </footer>
     </div>

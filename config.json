@@ -1,0 +1,8 @@
+{
+  "assetsUri": "/",
+  "branding": {
+    "homepage": "https://jhu.edu",
+    "logo": "img/fullSizeLogo.png",
+    "stylesheet": "assets/branding.css"
+  }
+}
