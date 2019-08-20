@@ -163,6 +163,7 @@ a:hover, .btn-link:hover {
 }
 #header-navbar {
   font-family: var(--font-bodycopy);
+  background-color: var(--jhu-bg-primary);
 }
 #header-navbar .nav-item .active {
   font-weight: bold;
