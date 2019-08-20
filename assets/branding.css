@@ -2,6 +2,8 @@
 
 :root {
   --jhu-bg-primary: white;
+  --pass-blue-primary: #418FDE;
+  --pass-blue-header: #005EB8;
 
   /* JHU Primary Colors */
   --jhu-blue-spirit: #68ACE5;
@@ -56,10 +58,17 @@
   background-color: var(--jhu-accent-10);
 }
 
-.text-white {
+.color-secondary {
+  color: var(--jhu-blue-heritage);
+}
+.color-accent {
+  color: var(--jhu-accent-10);
+}
+
+.white {
   color: white;
 }
-.text-black {
+.black {
   color: var(--jhu-black);
 }
 .text-link {
@@ -67,6 +76,10 @@
 }
 .text-link:hover {
   color: var(--jhu-accent-10);
+}
+
+.header {
+  font-family: var(--font-headline);
 } */
 /* ---------------- */
 
@@ -89,33 +102,35 @@ a:hover, .btn-link:hover {
 
 /* Buttons */
 .btn-primary {
-  background-color: var(--jhu-secondary-5);
-  border-color: var(--jhu-secondary-5);
+  background-color: var(--pass-blue-primary) !important;
+  border-color: var(--pass-blue-primary) !important;
   color:white;
 }
 .btn-primary:hover {
-  background-color: var(--jhu-accent-10);
-  border-color: var(--jhu-accent-10);
+  background-color: var(--pass-blue-primary);
+  border-color: var(--pass-blue-primary);
 }
 /*
  * This mess must be done in order to properly override Bootstrap styles for a clicked button
  */
 .btn-primary:not(:disabled):not(.disabled):active {
-  background-color: var(--jhu-accent-10);
-  border-color: var(--jhu-accent-10);
+  background-color: var(--pass-blue-primary);
+  border-color: var(--pass-blue-primary);
 }
 
 .btn-outline-primary {
-  border-color: var(--jhu-secondary-5);
-  color: var(--jhu-secondary-5);
+  border-color: var(--pass-blue-primary);
+  color: var(--pass-blue-primary);
 }
 .btn-outline-primary:hover {
-  background-color: var(--jhu-secondary-5);
-  border-color: var(--jhu-secondary-5);
+  background-color: var(--pass-blue-primary);
+  border-color: var(--pass-blue-primary);
+  color: white;
 }
 .btn-outline-primary:not(:disabled):not(.disabled):active {
-  background-color: var(--jhu-accent-10);
-  border-color: var(--jhu-accent-10);
+  background-color: var(--pass-blue-primary);
+  border-color: var(--pass-blue-primary);
+  color: white;
 }
 
 .btn-danger	{
@@ -138,14 +153,12 @@ a:hover, .btn-link:hover {
 /* Header */
 #brand-site-container {
   background-color: var(--jhu-bg-primary);
-  /* background-color: var(--jhu-blue-spirit); */
 }
 #brand-header {
-  background-color: var(--jhu-blue-heritage);
+  background-color: var(--pass-blue-header);
   color: var(--jhu-blue-spirit);
 }
 #brand-header-title {
-  /* color: var(--jhu-blue-spirit); */
   color: white;
 }
 #header-navbar {
