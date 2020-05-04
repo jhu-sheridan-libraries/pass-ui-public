@@ -1,4 +1,6 @@
   $(document).ready(function() {
+    document.querySelector('.info-banner').setAttribute('href', `/app/submissions/new/basics/?_=${new Date().getTime()}&covid=true`);
+
     $.ajax({
       url: "/app/",
       cache: false,
@@ -9,6 +11,8 @@
           $(ul).after('<li class="nav-item"><a href="/app/grants" class="nav-link ember-view">Grants</a></li>');
           var loginbtn = document.getElementById('login-button');
           loginbtn.style.visibility = 'hidden';
+
+          document.querySelector('.info-banner').setAttribute('href', `/app/submissions/new/basics/?_=${new Date().getTime()}&covid=true`);
         } else {
           timestampLoginLink();
         }

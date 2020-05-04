@@ -425,6 +425,13 @@ table td {
   display: block;
   font-style: italic; }
 
+.info-banner {
+  background-color: #F1C400;
+  color: black;
+  border: 0;
+  border-radius: 0;
+}
+
 footer {
   min-height: 100px; }
 
