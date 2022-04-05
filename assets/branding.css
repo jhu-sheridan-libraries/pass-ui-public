@@ -1,5 +1,3 @@
-@import url('fonts.css');
-
 :root {
   --jhu-bg-primary: white;
   --pass-blue-primary: #418FDE;
@@ -33,11 +31,11 @@
   --jhu-accent-12: #286140;
   --jhu-accent-13: #179949;
 
-  /* JHU Fonts */
-  --font-headline: quadon-regular, tahoma;
-  --font-subhead: quadon-regular, tahoma;
-  --font-bodycopy-accent: quadon-regular, tahoma;
-  --font-bodycopy: gentona-light, tahoma;
+  /* Fonts */
+  --font-headline: serif;
+  --font-subhead: serif;
+  --font-bodycopy-accent: serif;
+  --font-bodycopy: tahoma, sans-serif;
 
   /* Other colors */
   --btn-active-color: #C9C9C9;
