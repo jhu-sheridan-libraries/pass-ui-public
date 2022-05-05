@@ -2,7 +2,7 @@
 
 PASS is an application which provides a unified user interface that allow its users to deposit their manuscripts into multiple repositories as required by applicable funding agency's public access policies.
 
-This repository holds most of the static assets used by the dynamic application ([`pass-ember` found here](https://github.com/eclipse-pass/pass-ui)). There are some important HTML pages that the Ember app links to. Also importantly, a configuration is defined here that can inform the Ember app about where various assets can be loaded.
+This repository holds most of the static assets used by the dynamic application ([`pass-ui` found here](https://github.com/eclipse-pass/pass-ui)). There are some important HTML pages that the Ember app links to. Also importantly, a configuration is defined here that can inform the Ember app about where various assets can be loaded.
 
 ```
 pass-ui-static
