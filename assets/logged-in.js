@@ -21,9 +21,9 @@
   
   function timestampLoginLink()  {
     if ($('#login-link')) {
-      $('#login-link').attr('href',"/login?_=" + new Date().getTime());
+      $('#login-link').attr('href',"/login/jhu?_=" + new Date().getTime());
     }
     if ($('#get-started-link')) {
-      $('#get-started-link').attr('href',"/login?_=" + new Date().getTime());
+      $('#get-started-link').attr('href',"/login/jhu?_=" + new Date().getTime());
     }
   }
