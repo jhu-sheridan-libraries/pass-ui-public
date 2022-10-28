@@ -4,6 +4,6 @@
     "homepage": "https://jhu.edu",
     "logo": "img/fullSizeLogo.png",
     "stylesheet": "assets/branding.css",
-    "favicon": "favicon.png"
+    "favicon": "favicon.ico"
   }
 }

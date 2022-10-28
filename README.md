@@ -17,7 +17,7 @@ pass-ui-static
   |- index.html
   |- logout.html
   |
-  |- favicon.png
+  |- favicon.ico
   |- config.json
 ```
 
@@ -31,7 +31,7 @@ pass-ui-static
     "homepage": "https://www.harvard.edu/",
     "logo": "img/logo-final.svg",
     "stylesheet": "assets/branding.css",
-    "favicon": "favicon.png"
+    "favicon": "favicon.ico"
   }
 }
 ```

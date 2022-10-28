@@ -12,7 +12,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #20a8d8;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -9983,7 +9983,7 @@ base-chart.chart {
     width: 20px;
     margin-right: 10px;
     margin-left: -10px;
-    color: #c2cfd6;
+    color: white;
     text-align: center; }
   .dropdown-item .badge {
     position: absolute;
