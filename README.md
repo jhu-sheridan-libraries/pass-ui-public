@@ -24,14 +24,19 @@ pass-ui-static
 
 ### `config.json`
 
-```
+``` json
 {
   "assetsUri": "/",
   "branding": {
     "homepage": "https://www.harvard.edu/",
     "logo": "img/logo-final.svg",
     "stylesheet": "assets/branding.css",
-    "favicon": "favicon.ico"
+    "favicon": "favicon.ico",
+    "pages": {
+      "aboutUrl": "", // optional
+      "contactUrl": "", // optional
+      "faqUrl": "" // optional
+    }
   }
 }
 ```
