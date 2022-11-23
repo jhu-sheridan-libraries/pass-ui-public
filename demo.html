@@ -23,12 +23,10 @@
     label.click-to-gif {
       display: block;
       float: left;
-      background: DimGrey no-repeat center center;
-      background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1792 1792"><path d="M1288.678 637.83q0 37-33 56l-512 288q-14 8-31 8t-32-9q-32-18-32-55v-576q0-37 32-55 31-20 63-1l512 288q33 19 33 56zm128 0q0-104-40.5-198.5t-109.5-163.5q-69-69-163.5-109.5t-198.5-40.5q-104 0-198.5 40.5t-163.5 109.5q-69 69-109.5 163.5t-40.5 198.5q0 104 40.5 198.5t109.5 163.5q69 69 163.5 109.5t198.5 40.5q104 0 198.5-40.5t163.5-109.5q69-69 109.5-163.5t40.5-198.5zm256 0q0 209-103 385.5t-279.5 279.5q-176.5 103-385.5 103t-385.5-103q-176.5-103-279.5-279.5t-103-385.5q0-209 103-385.5t279.5-279.5q176.5-103 385.5-103t385.5 103q176.5 103 279.5 279.5t103 385.5z" fill="LightGrey"/></svg>') ;
-    }
-    .click-to-gif:hover {
-      background: DimGrey no-repeat center center;
-      background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1792 1792"><path d="M1288.678 637.83q0 37-33 56l-512 288q-14 8-31 8t-32-9q-32-18-32-55v-576q0-37 32-55 31-20 63-1l512 288q33 19 33 56zm128 0q0-104-40.5-198.5t-109.5-163.5q-69-69-163.5-109.5t-198.5-40.5q-104 0-198.5 40.5t-163.5 109.5q-69 69-109.5 163.5t-40.5 198.5q0 104 40.5 198.5t109.5 163.5q69 69 163.5 109.5t198.5 40.5q104 0 198.5-40.5t163.5-109.5q69-69 109.5-163.5t40.5-198.5zm256 0q0 209-103 385.5t-279.5 279.5q-176.5 103-385.5 103t-385.5-103q-176.5-103-279.5-279.5t-103-385.5q0-209 103-385.5t279.5-279.5q176.5-103 385.5-103t385.5 103q176.5 103 279.5 279.5t103 385.5z" fill="MediumGrey"/></svg>');
+      max-width: 1000px;
+      background: no-repeat;
+      background-size: contain;
+      background-image: url('img/demo-cover.svg') ;
     }
     .click-to-gif input[type=checkbox] + img {
       opacity: 0;
@@ -95,12 +93,12 @@
               A demo instance of Eclipse PASS is available. The following is a walk-through of a typical submission workflow:
             </p>
             <form action="">
-              <label class="click-to-gif" title="click/hit space to show gif">
+              <label class="click-to-gif mb-3" title="click/hit space to show gif">
                 <input type="checkbox">
-                <img class="border" style="max-width:1000px;" src="img/demo.gif" />
+                <img class="mb-3" style="max-width:1000px;" src="img/demo.gif" />
               </label>
             </form>
-            <p class="mt-3 mb-0">
+            <p class="mt-5 mb-0">
               You can find instructions on how to use the demo instance <a href="https://github.com/eclipse-pass/main/blob/main/docs/user/README.md">here</a>. Interested in running pass at your institution? <a href="contact.html">Contact us!</a>
             </p>
             <a href="/login/jhu" class="btn btn-primary my-3 pl-4 pr-4 ember-view">Use the Demo</a>
