@@ -5,6 +5,12 @@
     "logo": "/img/ef/eclipse_foundation_logo_wo/EF_WHT-OR_png.png",
     "stylesheet": "/assets/branding.css",
     "favicon": "favicon.ico",
-    "pages": {}
+    "pages": {
+      "showPagesNavBar": false,
+      "contactUrl": "https://demo.eclipse-pass.org/contact.html"
+    },
+    "error": {
+      "icon": "/app/error-icon.png"
+    }
   }
 }
